@@ -1,0 +1,6 @@
+---
+- name: setup Mysql with medium_db db and remote login
+  become: true
+  hosts: target_nodes
+  roles:
+    - mysql_setup
